@@ -1,0 +1,37 @@
+@import variables
+
+margins($p = $padding, $p-l = $padding-large)
+    .m{ margin: $p !important;}
+    .m--l{ margin: $p-l !important;}
+    .m-t{ margin-top: $p !important;}
+    .m-t--l{ margin-top: $p-l !important;}
+    .m-r{ margin-right: $p !important;}
+    .m-r--l{ margin-right: $p-l !important;}
+    .m-l{ margin-left: $p !important;}
+    .m-l--l{ margin-left: $p-l !important;}
+    .m-b{ margin-bottom: $p !important;}
+    .m-b--l{ margin-bottom: $p-l !important;}
+
+paddings($p = $padding, $p-l = $padding-large)
+    .c{ padding: $p !important;}
+    .c--l{ padding: $p-l !important;}
+    .c-t{ padding-top: $p !important;}
+    .c-t--l{ padding-top: $p-l !important;}
+    .c-r{ padding-right: $p !important;}
+    .c-r--l{ padding-right: $p-l !important;}
+    .c-l{ padding-left: $p !important;}
+    .c-l--l{ padding-left: $p-l !important;}
+    .c-b{ padding-bottom: $p !important;}
+    .c-b--l{ padding-bottom: $p-l !important;}
+
+paddings();
+margins();
+
+.no-padding-right{ padding-right: 0 !important;}
+.no-padding-left{ padding-right: 0 !important;}
+.no-padding-top{ padding-right: 0 !important;}
+.no-padding-bottom{ padding-right: 0 !important;}
+
+.full-height{
+  height: 100%;
+}

@@ -1,0 +1,32 @@
+//Defaults
+$gutter ?= 5px
+
+.row{
+  margin: 0 (-($gutter));
+}
+.row:after, .row:before{
+  content: ' ';
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+for row in (3..5)
+  for i in (1..5)
+    .c{i}in{row}{
+      padding: 0 $gutter;
+      width: (100/row * i)%;
+      float: left;
+    }
+
+for i in 20 25 50 75 100
+  .h{i}{
+    padding: $gutter 0;
+    height: (i)%;
+  }
+
+.vertical-grid{
+  height: 100%;
+  padding: -($gutter) 0;
+}
+

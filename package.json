@@ -1,0 +1,16 @@
+{
+  "name": "stylus-components",
+  "version": "0.0.0",
+  "description": "modular css components",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "oocss",
+    "stylus"
+  ],
+  "author": "Julian Krispel-Samsel <juliankrispel@yahoo.de> (http://goodafternoon.co/)",
+  "license": "ISC"
+}

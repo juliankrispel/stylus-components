@@ -1,0 +1,30 @@
+prefix(rule, value...)
+    -webkit-{rule} : value;  
+    -moz-{rule}    : value;  
+    -o-{rule}      : value; 
+    -ms-{rule}     : value; 
+    {rule}         : value;  
+
+animation()
+    prefix('animation', arguments)
+
+animation-delay()
+    prefix('animation-delay', arguments)
+
+transform(args...)
+    prefix(transform, args)
+
+no-user-select()
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+hardware-accelerated()
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
