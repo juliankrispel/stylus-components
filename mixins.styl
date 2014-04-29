@@ -14,6 +14,9 @@ animation-delay()
 transform(args...)
     prefix(transform, args)
 
+transition(args...)
+    prefix(transition, args)
+
 no-user-select()
     -webkit-touch-callout: none
     -webkit-user-select: none
@@ -23,8 +26,4 @@ no-user-select()
     user-select: none
 
 hardware-accelerated()
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
+    prefix(transform, translateZ(0))
