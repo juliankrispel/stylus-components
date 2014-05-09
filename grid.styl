@@ -1,5 +1,7 @@
 //Defaults
 $gutter ?= 5px
+$breakpoint-middle ?= 768px
+$breakpoint-small ?= 480px
 
 .row{
   margin: 0 (-($gutter));
@@ -13,11 +15,38 @@ $gutter ?= 5px
 
 for row in (3..5)
   for i in (1..5)
-    .c{i}in{row}{
-      padding: 0 $gutter;
-      width: (100/row * i)%;
-      float: left;
+
+    @media(min-width: $breakpoint-middle){
+      .desktop-c{i}in{row}{
+        padding: 0 $gutter;
+        width: (100/row * i)%;
+        float: left;
+      }
     }
+
+    @media(min-width: $breakpoint-large){
+      .wide-c{i}in{row}{
+        padding: 0 $gutter;
+        width: (100/row * i)%;
+        float: left;
+      }
+    }
+
+    @media(min-width: $breakpoint-small) and (max-width: $breakpoint-middle - 1){
+      .tablet-c{i}in{row}{
+        padding: 0 $gutter;
+        width: (100/row * i)%;
+        float: left;
+      }
+    }
+    @media(max-width: $breakpoint-small){
+      .mobile-c{i}in{row}{
+        padding: 0 $gutter;
+        width: (100/row * i)%;
+        float: left;
+      }
+    }
+
 
 for i in 20 25 50 75 100
   .h{i}{
