@@ -1,3 +1,4 @@
+@import "mixins"
 //Defauults
 $padding ?= 10px
 $padding-large ?= 20px
@@ -8,9 +9,14 @@ $index-bottom ?= 0
 $middle ?= 768px
 $small ?= 480px
 
+*{ box-sizing: border-box; }
 
 .full-height{ height: 100% !important;}
 .full-width{ width: 100% !important; }
+
+.cf
+  micro-clearfix()
+
 
 .right{ float: right; }
 .left{ float: left; }
@@ -32,3 +38,14 @@ $small ?= 480px
 .text-center{ text-align: center; }
 .text-left{ text-align: left; }
 .text-right{ text-align: right; }
+
+.no-padding{ padding: 0 !important; }
+.no-margin{ margin: 0 !important; }
+.no-padding-left{ padding-left: 0 !important; }
+.no-margin-left{ margin-left: 0 !important; }
+.no-padding-right{ padding-right: 0 !important; }
+.no-margin-right{ margin-right: 0 !important; }
+.no-padding-top{ padding-top: 0 !important; }
+.no-margin-top{ margin-top: 0 !important; }
+.no-padding-bottom{ padding-bottom: 0 !important; }
+.no-margin-bottom{ margin-bottom: 0 !important; }

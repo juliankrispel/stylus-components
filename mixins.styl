@@ -5,6 +5,12 @@ prefix(rule, value...)
     -ms-{rule}     : value; 
     {rule}         : value;  
 
+micro-clearfix()
+    &:before, &:after
+        content: ' ';
+        clear: both;
+        display: table;
+
 animation()
     prefix('animation', arguments)
 

@@ -1,3 +1,4 @@
+@import "mixins"
 //Defaults
 $gutter ?= 5px
 $breakpoint-middle ?= 768px
@@ -5,12 +6,7 @@ $breakpoint-small ?= 480px
 
 .row{
   margin: 0 (-($gutter));
-}
-.row:after, .row:before{
-  content: ' ';
-  clear: both;
-  display: table;
-  box-sizing: border-box;
+  micro-clearfix()
 }
 
 for row in (3..5)
