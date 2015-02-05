@@ -15,6 +15,11 @@ $breakpoint-small ?= 480px
 
 for row in (3..5)
   for i in (1..5)
+    .c{i}in{row}{
+      padding: 0 $gutter;
+      width: (100/row * i)%;
+      float: left;
+    }
 
     @media(min-width: $breakpoint-middle){
       .desktop-c{i}in{row}{
